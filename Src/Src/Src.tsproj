@@ -1,5 +1,25 @@
 <?xml version="1.0"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.32">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{049690A7-ED29-4148-8158-5A19A33DB52A}" PersistentType="true">TestEventClass</Name>
+			<DisplayName TxtId=""><![CDATA[NewEventClass_DisplayText]]></DisplayName>
+			<EventId>
+				<Name Id="1">Hello</Name>
+				<DisplayName TxtId=""><![CDATA[Hello World, how are you]]></DisplayName>
+				<Severity>Info</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="2">Error</Name>
+				<DisplayName TxtId=""><![CDATA[You broke something]]></DisplayName>
+				<Severity>Error</Severity>
+			</EventId>
+			<Hides>
+				<Hide GUID="{C410E2F4-C4BE-4C63-B762-E7BCC0F918CB}"/>
+				<Hide GUID="{5AA40BFF-EF66-42E3-8919-601613D29C9A}"/>
+			</Hides>
+		</DataType>
+	</DataTypes>
 	<Project ProjectGUID="{FC6DE01B-545B-4A71-A3D5-593620EFCA8D}" Target64Bit="true" ShowHideConfigurations="#x106">
 		<System>
 			<Tasks>
