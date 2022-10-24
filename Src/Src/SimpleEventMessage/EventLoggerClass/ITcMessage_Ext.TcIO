@@ -3,6 +3,15 @@
   <Itf Name="ITcMessage_Ext" Id="{ecc02940-e99f-4b59-aa27-20f74ac0a53f}">
     <Declaration><![CDATA[INTERFACE ITcMessage_Ext
 ]]></Declaration>
+    <Property Name="LoggerLevel" Id="{0e41f927-4626-478b-91df-4414fd23a8d2}">
+      <Declaration><![CDATA[PROPERTY LoggerLevel : TcEventSeverity]]></Declaration>
+      <Get Name="Get" Id="{5d3ace24-bef4-4c37-bf66-65ddbe71722a}">
+        <Declaration><![CDATA[]]></Declaration>
+      </Get>
+      <Set Name="Set" Id="{324ec054-699b-48a8-8e04-7f635f59a639}">
+        <Declaration><![CDATA[]]></Declaration>
+      </Set>
+    </Property>
     <Method Name="Send" Id="{974ef709-63a5-449e-b808-feae03cbbc39}">
       <Declaration><![CDATA[METHOD Send : BOOL
 VAR_INPUT
